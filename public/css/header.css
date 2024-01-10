@@ -21,7 +21,8 @@
     margin-left: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: x-large;
-    flex: 4;
+/*     flex: 4;*/
+    width: 90vw;
 }
 
 .userControls {
@@ -29,16 +30,16 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
+/*     margin-right: 10px; */
 }
 
 .userName {
     display: inline-block;
-    width: 80px;
+    width: 100px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .actionBtn {

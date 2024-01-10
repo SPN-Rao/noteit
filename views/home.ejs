@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit = no">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+</head>
+<body>
+    <%- include('partials/header',{
+        currentUser : activeUser,
+        definedControl : definedControl,
+    }) %>
+    <div class="container">
+        <div class="notes">
+            <% userNotes.forEach((elem,index) =>{ %>
+                <div class="noteItem input-field" id="<%= index %>">
+                    <%= elem %> 
+                </div>
+
+           <% }) %>
+            
+        </div>
+
+        <div class="form-container">
+            <form action="/notes/add-note" method="post">
+                <div class="inputGroup writtenInput">
+                    <input type="text" name="noteitem" id="noteitem" class="input-field" required/>
+                </div>
+
+                <div class="inputGroup actionInput">
+                    <input type="submit" value="Add Note" class="actionBtn">
+                </div>
+
+                <p class="errmsg" > <%= err %></p>
+            </form>
+        </div>
+
+
+    </div>
+
+    
+</body>
+
+</html>

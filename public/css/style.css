@@ -1,0 +1,80 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid;
+    height: 70px;
+    box-shadow: 0px -3px 5px 2px lightgray;
+    background: white;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.inputGroup{
+    display: flex;
+    justify-content: center;
+}
+
+.input-field{
+    width: 99%;
+}
+
+input {
+    overflow: visible;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+
+.input-field{
+    margin: 2px 0px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    overflow: hidden;
+    border-bottom: 1px solid;
+    box-shadow: inset 1px 1px 3px 1px #efe8e8;
+}
+
+.writtenInput{
+    width: 90vw;
+}
+
+.container{
+    margin-top: 10vh;
+}
+
+.notes{
+    padding: 5px;
+}
+
+.noteItem{
+    margin-bottom: 5px;
+    overflow: visible;
+    word-wrap: break-word;
+    min-height: 35px;
+}
+.errmsg{
+    color: #e92a16;
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
